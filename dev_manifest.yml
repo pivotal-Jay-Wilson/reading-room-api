@@ -1,0 +1,14 @@
+applications:
+- name: readingroom
+  disk_quota: 512M
+  health-check-type: http
+  health-check-http-endpoint: /health
+  instances: 1
+  memory: 512M
+  routes:
+  - route: dev-bcsreadingroom.apps.pcfone.io
+  stack: cflinuxfs3
+  services:
+   - CareLog
+   - readingroom
+  

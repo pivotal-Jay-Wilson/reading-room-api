@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/main.ts",
+            "preLaunchTask": "npm: prestart:prod",
+            "env": {"PORT": "3000", 
+                    "VCAP_SERVICES": "{\"postgresql-10-odb\":[{\"binding_name\":null,\"credentials\":{\"db_host\":\"127.0.0.1\",\"db_name\":\"readingroom\",\"db_port\":5432,\"jdbc_read_uri\":\"jdbc:postgresql://127.0.0.1:5432/readingroom\",\"jdbc_uri\":\"jdbc:postgresql://127.0.0.1:5432/readingroom\",\"password\":\"E!7G10_i4OFx!A7!S!g7\",\"read_host\":\"127.0.0.1\",\"read_port\":5432,\"read_uri\":\"postgresql://rruser430df85a9236daa8b305e3cf51e89a37:E%217G10_i4OFx%21A7%21S%21g7@127.0.0.1:5432/readingroom\",\"service_id\":\"service-instance_6166ce07-bd81-4f7c-88e5-bbb5ec70ee71\",\"service_role\":\"rruser\",\"uri\":\"postgresql://rruser430df85a9236daa8b305e3cf51e89a37:E%217G10_i4OFx%21A7%21S%21g7@127.0.0.1:5432/readingroom\",\"username\":\"rruser430df85a9236daa8b305e3cf51e89a37\"},\"instance_name\":\"CareLog\",\"label\":\"postgresql-10-odb\",\"name\":\"CareLog\",\"plan\":\"standalone\",\"provider\":null,\"syslog_drain_url\":null,\"tags\":[\"crunchy\",\"postgresql\",\"postgresql-10\",\"on-demand\"],\"volume_mounts\":[]}],\"user-provided\": [{\"binding_name\": null,\"credentials\": {\"Schemes\": \"http\"},\"instance_name\": \"readingroom\",\"label\": \"user-provided\",\"name\": \"readingroom\",\"syslog_drain_url\": \"\",\"tags\": [],\"volume_mounts\": []}]}",
+                    "VCAP_APPLICATION": "{\"application_id\":\"ff0d5b47-637b-4a0e-a43d-f40f9b773875\",\"application_name\":\"user-api-jjw\",\"application_uris\":[],\"application_version\":\"b4d7c14d-9f0c-4137-a2b6-218c4b782686\",\"cf_api\":\"https://api.run.pcfone.io\",\"limits\":{\"disk\":512,\"fds\":16384,\"mem\":512},\"name\":\"user-api-jjw\",\"organization_id\":\"3e98d940-d885-47f2-b4cd-1113dc5f2533\",\"organization_name\":\"pivot-jwilson\",\"process_id\":\"ff0d5b47-637b-4a0e-a43d-f40f9b773875\",\"process_type\":\"web\",\"space_id\":\"5aba46dd-8c34-42db-8948-ebb9e71d4457\",\"space_name\":\"production\",\"uris\":[],\"users\":null,\"version\":\"b4d7c14d-9f0c-4137-a2b6-218c4b782686\"}"
+             },
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
