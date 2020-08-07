@@ -30,7 +30,7 @@
     "body-parser": "^1.18.2",
     "cfenv": "^1.2.2",
     "cheerio": "^1.0.0-rc.3",
-    "class-transformer": "^0.1.8",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.7.2",
     "fastify-swagger": "^2.5.0",
     "fs": "0.0.1-security",
